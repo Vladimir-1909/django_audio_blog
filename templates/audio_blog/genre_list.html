@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Жанры
+{% endblock title%}
+
+{% block content %}
+{% for genre in genre_list %}
+    <a href="{{ genre.get_absolute_url }}"><span class="btn btn-primary mt-3 mb-5">{{ genre.name|title }}</span></a>
+{% endfor %}
+
+{% include 'include/pagination.html' %}
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Audio Blog
+{% endblock title%}
+
+{% block content %}
+{% for audio in audio_list %}
+<div class="audio">
+    <p>{{ audio.name }}</p>
+    <audio controls>
+        <source src="{{ audio.audio.url }}" type="audio/mpeg">
+    </audio>
+</div>
+{% endfor %}
+{% include 'include/pagination.html' %}
+{% endblock content %}

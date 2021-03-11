@@ -1,0 +1,19 @@
+{% load static %}
+<footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+        <div class="col-md-8 md-1">
+            <img class="mb-2" src="{% static 'img/icon.png' %}" alt="" width="27" height="25">
+            <small class="d-block mb-3 text-muted">©2021</small>
+        </div>
+        <div class="col-md-8 md-1">
+            <h5>Audio Blog</h5>
+            <ul class="list-unstyled text-small">
+                <li><a class="link-secondary" href="{% url 'audio_list' %}">Главная</a></li>
+                <li><a class="link-secondary" href="{% url 'genre_list' %}">Жанры</a></li>
+                <li><a class="link-secondary" href="#top">
+                    <img class="mt-2" src="{% static 'img/up_icon.png' %}" alt="" width="27" height="25">
+                </a></li>
+            </ul>
+        </div>
+    </div>
+</footer>

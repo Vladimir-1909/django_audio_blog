@@ -1,4 +1,4 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from .models import Audio, Genre
 
 
@@ -24,3 +24,10 @@ class GenreDetail(DetailView):
     """Список аудио жанров"""
     model = Genre
     slug_field = 'url'
+
+
+class AudioCreate(CreateView):
+    """Добавление аудио"""
+    model = Audio
+
+    fields = ["name", "audio", "genres"]

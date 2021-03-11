@@ -60,6 +60,53 @@ button::-moz-focus-inner {
     box-shadow: -1px 5px 43px -9px rgba(0,0,0,0.56);
 }
 
+.form-add-audio {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.helptext {font-size: 9pt}
+
+.img_field {
+    display: flex;
+    weight: 100%;
+}
+
+.form-add-audio .helptext {color: #b7b7b7}
+
+.form-add-audio ul.errorlist {
+    color: #ca5858;
+    font-weight: bold;
+}
+
+.form-add-audio input,
+.form-add-audio textarea,
+.form-add-audio select {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 1%;
+    transition: all .5s;
+}
+
+.form-add-audio select option:active {
+    background: red;
+}
+
+.form-add-audio input:focus,
+.form-add-audio textarea:focus,
+.form-add-audio select:focus {
+    border: 2px solid #00effb73;
+    outline:none;
+    background-color: #FFF;
+    }
+
+
 .row {
     margin-left: 9%;
 }

@@ -6,12 +6,7 @@ Audio Blog
 
 {% block content %}
 {% for audio in audio_list %}
-<div class="audio">
-    <p>{{ audio.name }}</p>
-    <audio controls>
-        <source src="{{ audio.audio.url }}" type="audio/mpeg">
-    </audio>
-</div>
+{% include 'include/audio.html' %}
 {% endfor %}
 {% include 'include/pagination.html' %}
 {% endblock content %}

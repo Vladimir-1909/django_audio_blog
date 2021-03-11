@@ -6,11 +6,6 @@
 
 {% block content %}
 {% for audio in genre.audios.all %}
-    <div class="audio">
-    <p>{{ audio.name }}</p>
-    <audio controls>
-        <source src="{{ audio.audio.url }}" type="audio/mpeg">
-    </audio>
-</div>
+{% include 'include/audio.html' %}
 {% endfor %}
 {% endblock content %}

@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="shortcut icon" href="{% static 'img/icon.png' %}" type="image/png">
     <script src="{% static 'js/javascript.js' %}"></script>
-    <title>{% block title %}
-{% endblock title%}</title>
+    <title>{% block title %}{% endblock title%}</title>
 </head>
 <body>
 {% include 'include/header.html' %}
